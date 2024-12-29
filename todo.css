@@ -1,0 +1,130 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Heading style */
+.todo-heading {
+    margin: 21px 0;
+    font-size: 2rem;
+    
+}
+
+/*Error display style*/
+#error{
+    text-align: center;
+    font-weight: 700;
+    color: red;
+}
+
+
+/* Main container styling */
+.todoContainer1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    column-gap: 10px;
+    row-gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Todo input fields styling */
+.todo1, .date1, .time1 {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*tasks container style*/
+.todoContainer {
+    max-width: 780px;
+    margin: 1rem 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Each todo item style */
+.todo-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1rem 0;
+}
+
+/* Add button styling */
+.add {
+    background-color: #09b109;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*add button style*/
+.add:hover {
+    background-color: #30f330;
+}
+
+/*Delete button style*/
+.delete {
+    background-color: rgb(223, 36, 26);
+    border-radius: 4px 3px;
+    border: 1px solid rgb(8, 11, 11); /* Add a border for clarity */
+    padding: 5px;
+    font-size: 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+
+.delete:hover {
+    background-color: rgb(233, 22, 10);
+    border-color: rgb(40, 40, 35);
+    font-size: 14px;
+}
+
+/*Message style */
+.msg {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* Responsive layout for different devices */
+@media (max-width: 900px) {
+    .todoContainer1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .todoContainer1 {
+        grid-template-columns: 1fr;
+    }
+
+    .add {
+        font-size: 0.9rem;
+    }
+}
+
+/* Styling for todo list items (optional placeholder)
+.todoContainer {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}*/
