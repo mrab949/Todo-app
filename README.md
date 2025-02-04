@@ -12,7 +12,3 @@ A simple and user-friendly To-Do application that helps users organize their tas
 - **HTML**: For creating the application structure.  
 - **CSS**: For styling and responsive design.  
 - **JavaScript**: For task management logic and interactivity.  
-
-## Installation  
-```bash
-  https://github.com/yourusername/todo-app.git
